@@ -1,0 +1,336 @@
+ADVANCED EXCEL NOTES
+
+1. ADVANCED FORMULAS
+
+Advanced formulas Excel mein data ko calculate, search aur analyze karne ke liye use hote hain.
+
+Important functions:
+• IF – condition check karna
+• AND – multiple conditions check karna
+• OR – alternative conditions check karna
+• SUMIF / SUMIFS – condition ke according total
+• COUNTIF / COUNTIFS – condition ke according counting
+• AVERAGEIF / AVERAGEIFS – condition ke according average
+• IFERROR – errors ko handle karna
+
+Example:
+=IF(B2>=40,"Pass","Fail")
+
+2. LOOKUP FUNCTIONS
+
+Lookup functions ka use kisi table mein information search karne ke liye hota hai.
+
+Important functions:
+• VLOOKUP
+• HLOOKUP
+• XLOOKUP
+• INDEX
+• MATCH
+
+VLOOKUP vertical data mein search karta hai.
+HLOOKUP horizontal data mein search karta hai.
+XLOOKUP modern aur flexible lookup function hai.
+INDEX + MATCH advanced lookup ke liye commonly use hota hai.
+
+3. DATA SORTING AND FILTERING
+
+Sorting data ko particular order mein arrange karta hai.
+
+Types:
+• A to Z
+• Z to A
+• Smallest to Largest
+• Largest to Smallest
+
+Filtering ka use sirf required data ko display karne ke liye hota hai.
+
+Example:
+Sirf Delhi ki sales show karna.
+
+4. CONDITIONAL FORMATTING
+
+Conditional Formatting conditions ke according cells ko automatically format karta hai.
+
+Uses:
+• Low marks highlight karna
+• Duplicate values find karna
+• Top/Bottom values highlight karna
+• Data Bars
+• Color Scales
+• Icon Sets
+
+Path:
+Home → Conditional Formatting
+
+5. DATA VALIDATION
+
+Data Validation ka use incorrect data entry ko prevent karne ke liye hota hai.
+
+Uses:
+• Dropdown list
+• Number restrictions
+• Date restrictions
+• Text length restrictions
+
+Example:
+Department column mein sirf HR, IT, Sales select karna.
+
+6. EXCEL TABLES
+
+Excel Table data ko structured format mein organize karta hai.
+
+Advantages:
+• Automatic formatting
+• Automatic filtering
+• Structured references
+• Automatic formula filling
+• Easy data management
+
+Shortcut:
+Ctrl + T
+
+7. PIVOT TABLE
+
+Pivot Table large data ko quickly summarize aur analyze karta hai.
+
+Isse hum:
+• Total sales
+• Average sales
+• Product-wise sales
+• Region-wise sales
+• Month-wise sales
+
+calculate kar sakte hain.
+
+Main areas:
+• Rows
+• Columns
+• Values
+• Filters
+
+8. PIVOT CHART
+
+Pivot Chart Pivot Table ke data ko graphical form mein represent karta hai.
+
+Common charts:
+• Column
+• Bar
+• Line
+• Pie
+
+Reports aur dashboards mein iska use hota hai.
+
+9. SLICERS
+
+Slicer Pivot Table ya Table ko visually filter karne ka tool hai.
+
+Example:
+Region slicer mein Delhi select karne par sirf Delhi ka data show hoga.
+
+Slicer dashboards ko interactive banata hai.
+
+10. POWER QUERY
+
+Power Query Excel ka powerful data cleaning aur transformation tool hai.
+
+Uses:
+• Data import
+• Data cleaning
+• Duplicate removal
+• Blank values handling
+• Columns split/merge
+• Data type change
+• Multiple files combine
+• Tables merge
+
+Path:
+Data → Get & Transform Data
+
+11. WHAT-IF ANALYSIS
+
+What-If Analysis different situations ke results ko analyze karta hai.
+
+Main tools:
+• Goal Seek
+• Scenario Manager
+• Data Table
+
+Example:
+Required profit achieve karne ke liye kitni sales chahiye.
+
+12. GOAL SEEK
+
+Goal Seek required output ke basis par input value find karta hai.
+
+Example:
+Agar target profit ₹50,000 hai, to required sales find karna.
+
+Path:
+Data → What-If Analysis → Goal Seek
+
+13. CHARTS
+
+Charts data ko graphical form mein represent karte hain.
+
+Important charts:
+• Column Chart
+• Bar Chart
+• Line Chart
+• Pie Chart
+• Area Chart
+• Scatter Chart
+
+Charts se trends aur comparisons easily samajh aate hain.
+
+14. EXCEL DASHBOARD
+
+Dashboard ek interactive report hoti hai jo important information ko ek screen par display karti hai.
+
+Dashboard mein:
+• KPI
+• Charts
+• Pivot Tables
+• Slicers
+• Filters
+
+use kiye jate hain.
+
+Example:
+Sales Dashboard mein Total Sales, Orders, Profit, Region-wise Sales aur Monthly Sales show ki ja sakti hain.
+
+15. DATA CLEANING
+
+Data Cleaning ka matlab incorrect, duplicate ya incomplete data ko correct karna hai.
+
+Important tools:
+• Remove Duplicates
+• Find & Replace
+• Text to Columns
+• TRIM
+• CLEAN
+• Flash Fill
+• Power Query
+
+16. TEXT FUNCTIONS
+
+Text functions text data ko manipulate karne ke liye use hote hain.
+
+Important functions:
+• LEFT – left side ke characters
+• RIGHT – right side ke characters
+• MID – middle characters
+• LEN – text ki length
+• TRIM – extra spaces remove
+• CONCAT – text combine
+• TEXTJOIN – multiple text values combine
+
+17. DATE AND TIME FUNCTIONS
+
+Date aur time data ke saath calculations ke liye use hote hain.
+
+Important functions:
+• TODAY()
+• NOW()
+• DATE()
+• DAY()
+• MONTH()
+• YEAR()
+• DATEDIF()
+
+Example:
+=TODAY()
+
+Current date return karta hai.
+
+18. CONDITIONAL CALCULATIONS
+
+Excel conditions ke according calculation kar sakta hai.
+
+Important functions:
+• SUMIF
+• SUMIFS
+• COUNTIF
+• COUNTIFS
+• AVERAGEIF
+• AVERAGEIFS
+
+Ye sales, attendance, employee aur financial data mein commonly use hote hain.
+
+19. MACROS
+
+Macros repetitive tasks ko automatically perform karne ke liye use hote hain.
+
+Example:
+Ek report ko baar-baar format karne ke instead Macro automatically formatting kar sakta hai.
+
+Path:
+View → Macros → Record Macro
+
+20. VBA
+
+VBA ka full form Visual Basic for Applications hai.
+
+VBA ka use Excel mein automation aur custom programs banane ke liye hota hai.
+
+VBA se:
+• Automatic reports
+• Buttons
+• Data processing
+• Repetitive tasks
+• Custom functions
+
+banaye ja sakte hain.
+
+21. POWER PIVOT
+
+Power Pivot large datasets aur advanced data analysis ke liye use hota hai.
+
+Features:
+• Data Model
+• Multiple tables
+• Relationships
+• Measures
+• DAX formulas
+
+Power Pivot large business reports ke liye useful hai.
+
+22. DAX
+
+DAX ka full form Data Analysis Expressions hai.
+
+DAX Power Pivot aur Power BI mein calculations ke liye use hota hai.
+
+Common functions:
+• SUM
+• CALCULATE
+• FILTER
+• COUNT
+• DISTINCTCOUNT
+
+23. EXCEL SHORTCUTS
+
+Ctrl + C = Copy
+Ctrl + V = Paste
+Ctrl + X = Cut
+Ctrl + Z = Undo
+Ctrl + S = Save
+Ctrl + F = Find
+Ctrl + H = Replace
+Ctrl + T = Create Table
+Ctrl + Shift + L = Filter
+Alt + = = AutoSum
+F2 = Edit Cell
+Ctrl + Arrow Key = Data ke end tak jaana
+
+24. IMPORTANT ADVANCED EXCEL SKILLS
+
+Advanced Excel mein mainly ye skills important hain:
+
+• Advanced Formulas
+• Lookup Functions
+• Data Cleaning
+• Pivot Tables
+• Pivot Charts
+• Slicers
+• Conditional Formatting
+• Data Validation
