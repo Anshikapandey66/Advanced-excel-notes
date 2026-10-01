@@ -11,7 +11,7 @@ Important functions:
 • SUMIF / SUMIFS – condition ke according total
 • COUNTIF / COUNTIFS – condition ke according counting
 • AVERAGEIF / AVERAGEIFS – condition ke according average
-• IFERROR – errors ko handle karna
+• IFERROR – errors ko handle karna 
 
 Example:
 =IF(B2>=40,"Pass","Fail")
