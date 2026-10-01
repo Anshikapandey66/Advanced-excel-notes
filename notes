@@ -1,0 +1,344 @@
+ADVANCED EXCEL NOTES
+
+1. IF FUNCTION
+
+IF function ka use kisi condition ko check karne ke liye kiya jata hai.
+
+Syntax:
+=IF(condition, value_if_true, value_if_false)
+
+Example:
+=IF(B2>=40,"Pass","Fail")
+
+Agar marks 40 ya usse zyada hain to Pass aayega, otherwise Fail.
+
+---
+
+2. AND FUNCTION
+
+AND function ka use multiple conditions ko check karne ke liye hota hai. Isme sabhi conditions TRUE honi chahiye.
+
+Syntax:
+=AND(condition1, condition2, ...)
+
+Example:
+=IF(AND(B2>=40,C2>=40),"Pass","Fail")
+
+---
+
+3. OR FUNCTION
+
+OR function ka use multiple conditions mein se kisi ek condition ke TRUE hone par kiya jata hai.
+
+Syntax:
+=OR(condition1, condition2, ...)
+
+Example:
+=IF(OR(B2>=40,C2>=40),"Pass","Fail")
+
+---
+
+4. SUMIF FUNCTION
+
+SUMIF function kisi particular condition ke according values ka total calculate karta hai.
+
+Syntax:
+=SUMIF(range, criteria, sum_range)
+
+Example:
+=SUMIF(A2:A10,"Lucknow",B2:B10)
+
+Is formula se Lucknow ki total sales calculate hongi.
+
+---
+
+5. SUMIFS FUNCTION
+
+SUMIFS function multiple conditions ke according total calculate karta hai.
+
+Syntax:
+=SUMIFS(sum_range, criteria_range1, criteria1, criteria_range2, criteria2)
+
+Example:
+=SUMIFS(C2:C10,A2:A10,"Lucknow",B2:B10,"Laptop")
+
+Ye Lucknow mein Laptop ki total sales calculate karega.
+
+---
+
+6. COUNTIF FUNCTION
+
+COUNTIF kisi particular condition ko satisfy karne wale cells ki counting karta hai.
+
+Syntax:
+=COUNTIF(range, criteria)
+
+Example:
+=COUNTIF(B2:B20,">=50")
+
+Ye 50 ya usse zyada marks wale students ko count karega.
+
+---
+
+7. COUNTIFS FUNCTION
+
+COUNTIFS multiple conditions ke according cells ko count karta hai.
+
+Syntax:
+=COUNTIFS(range1, criteria1, range2, criteria2)
+
+Example:
+=COUNTIFS(B2:B20,">=50",C2:C20,"Pass")
+
+---
+
+8. AVERAGEIF FUNCTION
+
+AVERAGEIF kisi condition ke according average calculate karta hai.
+
+Syntax:
+=AVERAGEIF(range, criteria, average_range)
+
+Example:
+=AVERAGEIF(A2:A10,"Delhi",B2:B10)
+
+Ye Delhi ki average sales calculate karega.
+
+---
+
+9. VLOOKUP
+
+VLOOKUP ka use table ke first column mein kisi value ko search karke usi row se required information nikalne ke liye hota hai.
+
+Syntax:
+=VLOOKUP(lookup_value, table_array, col_index_num, FALSE)
+
+Example:
+=VLOOKUP(E2,A2:D10,3,FALSE)
+
+E2 mein di hui value ko A2:D10 table mein search karega aur third column ki value return karega.
+
+---
+
+10. XLOOKUP
+
+XLOOKUP ek modern lookup function hai. Iska use kisi value ko search karke corresponding result find karne ke liye hota hai.
+
+Syntax:
+=XLOOKUP(lookup_value, lookup_array, return_array)
+
+Example:
+=XLOOKUP(E2,A2:A10,C2:C10)
+
+---
+
+11. INDEX AND MATCH
+
+INDEX aur MATCH ko combine karke advanced lookup kiya ja sakta hai.
+
+MATCH kisi value ki position find karta hai aur INDEX us position ki value return karta hai.
+
+Formula:
+=INDEX(C2:C10,MATCH(E2,A2:A10,0))
+
+---
+
+12. IFERROR
+
+IFERROR ka use formula mein error aane par custom message show karne ke liye hota hai.
+
+Syntax:
+=IFERROR(formula, value_if_error)
+
+Example:
+=IFERROR(VLOOKUP(E2,A2:C10,3,FALSE),"Not Found")
+
+Agar value nahi milti hai to "Not Found" show hoga.
+
+---
+
+13. CONDITIONAL FORMATTING
+
+Conditional Formatting ka use kisi condition ke according cells ko automatically highlight karne ke liye hota hai.
+
+Examples:
+• 40 se kam marks ko highlight karna.
+• Top 10 values highlight karna.
+• Duplicate values highlight karna.
+• Data Bars lagana.
+• Color Scales use karna.
+
+Path:
+Home → Conditional Formatting
+
+---
+
+14. DATA VALIDATION
+
+Data Validation ka use Excel mein data entry ko control karne ke liye hota hai.
+
+Example:
+Gender column mein sirf Male, Female aur Other allow karna.
+
+Path:
+Data → Data Validation
+
+Iska use dropdown list banane ke liye bhi kiya jata hai.
+
+---
+
+15. PIVOT TABLE
+
+Pivot Table ek powerful Excel tool hai jo large amount of data ko summarize aur analyze karne ke liye use hota hai.
+
+Pivot Table se hum:
+• Total Sales
+• Average Sales
+• Region-wise Sales
+• Product-wise Sales
+• Month-wise Sales
+
+calculate kar sakte hain.
+
+Main sections:
+• Rows
+• Columns
+• Values
+• Filters
+
+Path:
+Insert → PivotTable
+
+---
+
+16. SLICER
+
+Slicer Pivot Table ko interactive filter banata hai.
+
+Example:
+Region ke liye Lucknow, Delhi, Mumbai jaise buttons bana sakte hain.
+
+User kisi region par click karke sirf us region ka data dekh sakta hai.
+
+Path:
+PivotTable Analyze → Insert Slicer
+
+---
+
+17. PIVOT CHART
+
+Pivot Chart Pivot Table ke data ka graphical representation hota hai.
+
+Common Pivot Charts:
+• Column Chart
+• Bar Chart
+• Line Chart
+• Pie Chart
+
+Pivot Chart ka use dashboards aur reports mein hota hai.
+
+---
+
+18. POWER QUERY
+
+Power Query Excel ka data cleaning aur transformation tool hai.
+
+Power Query ka use:
+• Data import karne ke liye
+• Duplicate remove karne ke liye
+• Blank values handle karne ke liye
+• Columns split karne ke liye
+• Columns merge karne ke liye
+• Data type change karne ke liye
+• Multiple files combine karne ke liye
+• Tables merge karne ke liye
+
+Path:
+Data → Get & Transform Data
+
+---
+
+19. WHAT-IF ANALYSIS
+
+What-If Analysis ka use different situations ke results ko analyze karne ke liye hota hai.
+
+Main tools:
+
+1. Goal Seek
+2. Scenario Manager
+3. Data Table
+
+---
+
+20. GOAL SEEK
+
+Goal Seek ka use required result achieve karne ke liye input value find karne mein hota hai.
+
+Example:
+Agar required profit ₹50,000 hai to Goal Seek calculate kar sakta hai ki required sales kitni honi chahiye.
+
+Path:
+Data → What-If Analysis → Goal Seek
+
+---
+
+21. EXCEL DASHBOARD
+
+Excel Dashboard ek interactive visual report hota hai jo important information ko ek hi screen par show karta hai.
+
+Dashboard mein generally:
+• KPI Cards
+• Charts
+• Pivot Tables
+• Slicers
+• Filters
+• Sales Summary
+
+use kiye jate hain.
+
+Example:
+SALES DASHBOARD
+
+Total Sales
+Total Orders
+Average Sales
+Top Product
+Region-wise Sales
+Monthly Sales
+Sales Trend
+
+---
+
+22. MACROS
+
+Macro ka use repetitive tasks ko automatically perform karne ke liye hota hai.
+
+Macro ko record karke same task ko baar-baar automatically perform karwa sakte hain.
+
+Path:
+View → Macros → Record Macro
+
+Advanced automation ke liye VBA (Visual Basic for Applications) ka use kiya jata hai.
+
+---
+
+IMPORTANT TOPICS FOR JOB
+
+Advanced Excel ke liye in topics ko achhe se practice karna chahiye:
+
+1. IF
+2. SUMIF / SUMIFS
+3. COUNTIF / COUNTIFS
+4. VLOOKUP
+5. XLOOKUP
+6. INDEX + MATCH
+7. IFERROR
+8. Conditional Formatting
+9. Data Validation
+10. Pivot Table
+11. Pivot Chart
+12. Slicer
+13. Power Query
+14. What-If Analysis
+15. Excel Dashboard
+16. Macros and Basic VBA
