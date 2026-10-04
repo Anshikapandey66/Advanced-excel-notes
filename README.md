@@ -39,7 +39,7 @@ This repository contains my **Advanced Excel notes, formulas, tools, shortcuts, 
 * Slicers
 * What-If Analysis
 * Goal Seek
-* Scenario Manager
+* Scenario Manager. 
 
 ### 🔹 Data Transformation
 
